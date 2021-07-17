@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Video Stream</title>
+    
+</head>
+
+
+<body>
+    <h1> Video Streaming</h1>
+    <div>
+
+        <img src="{{ url_for('webcam') }}" width="600" height="400" style="border:2px solid black" > 
+
+    </div>
+    <form action="/logout">
+        <div>
+            <button class="button button1">Log Out</button>
+        </div>
+    </form>
+
+    <form action="/home">
+        <div>
+            <button class="button button2">Back</button>
+        </div>
+    </form>
+</body>
+</html>
